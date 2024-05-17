@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_application_1/tampilangame.dart';
 
-class Homepage extends StatelessWidget {
-  const Homepage({super.key});
+class HomepageAdmin extends StatelessWidget {
+  const HomepageAdmin({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -49,8 +47,9 @@ class Homepage extends StatelessWidget {
                   top: 30,
                   left: 35,
                   child: Text(
-                    'Mengalami pelecehan?',
+                    'Tambah Mentor',
                     style: TextStyle(
+                      fontFamily: 'Poppins',
                       color: Colors.white,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -61,7 +60,7 @@ class Homepage extends StatelessWidget {
                   top: 55,
                   left: 35,
                   child: Text(
-                    'Klik tanda + untuk melapor',
+                    'Klik tanda + untuk menambah',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 12,
@@ -103,182 +102,209 @@ class Homepage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-               padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
-                children: [
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage('assets/images/saya.JPG'),
-                      ),
-                      SizedBox(height: 5),
-                      Text(
-                        'Dr.Verry',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 10),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage('assets/images/saya.JPG'),
-                      ),
-                      SizedBox(height: 5),
-                      Text(
-                        'fasjfhbajfhjfna',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 10),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage('assets/images/saya.JPG'),
-                      ),
-                      SizedBox(height: 5),
-                      Text(
-                        'fasjfhbajfhjfna',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 10),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage('assets/images/saya.JPG'),
-                      ),
-                      SizedBox(height: 5),
-                      Text(
-                        'fasjfhbajfhjfna',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 10),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage('assets/images/saya.JPG'),
-                      ),
-                      SizedBox(height: 5),
-                      Text(
-                        'fasjfhbajfhjfna',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 10),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage('assets/images/saya.JPG'),
-                      ),
-                      SizedBox(height: 5),
-                      Text(
-                        'fasjfhbajfhjfna',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 10),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage('assets/images/saya.JPG'),
-                      ),
-                      SizedBox(height: 5),
-                      Text(
-                        'fasjfhbajfhjfna',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 10),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage('assets/images/saya.JPG'),
-                      ),
-                      SizedBox(height: 5),
-                      Text(
-                        'fasjfhbajfhjfna',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Text(
-                'Ingin Hiburan',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            SizedBox(height: 10),
-            Stack(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Padding(
-                  padding: EdgeInsets.all(15.0),
-                  child: Image.asset(
-                    'assets/images/mask2.png',
-                  ),
-                ),
-                Positioned(
-                  right: 10,
-                  bottom: 15,
-                  child: Image.asset(
-                    'assets/images/animasi.png',
-                  ),
-                ),
-                Positioned(
-                  left: 30,
-                  top: 130,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => tampilangame()),
-                      );
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFFE87C5F),
+                Column(
+                  children: [
+                    CircleAvatar(
+                      radius: 35,
+                      backgroundImage: AssetImage('assets/images/saya.JPG'),
                     ),
-                    child: Text(
-                      'ayo main',
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
+                    SizedBox(height: 5),
+                    Text(
+                      'Dr.Verry',
+                      style: TextStyle(fontSize: 12),
                     ),
-                  ),
+                  ],
+                ),
+                SizedBox(width: 10),
+                Column(
+                  children: [
+                    CircleAvatar(
+                      radius: 35,
+                      backgroundImage: AssetImage('assets/images/saya.JPG'),
+                    ),
+                    SizedBox(height: 5),
+                    Text(
+                      'fasjfhbajfhjfna',
+                      style: TextStyle(fontSize: 12),
+                    ),
+                  ],
+                ),
+                SizedBox(width: 10),
+                Column(
+                  children: [
+                    CircleAvatar(
+                      radius: 35,
+                      backgroundImage: AssetImage('assets/images/saya.JPG'),
+                    ),
+                    SizedBox(height: 5),
+                    Text(
+                      'Nama 3',
+                      style: TextStyle(fontSize: 12),
+                    ),
+                  ],
+                ),
+                SizedBox(width: 10),
+                Column(
+                  children: [
+                    CircleAvatar(
+                      radius: 35,
+                      backgroundImage: AssetImage('assets/images/saya.JPG'),
+                    ),
+                    SizedBox(height: 5),
+                    Text(
+                      'Nama 4',
+                      style: TextStyle(fontSize: 12),
+                    ),
+                  ],
                 ),
               ],
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 20),          
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
-                'Riwayat Laporan',
+                'List Laporan Pelecehan',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            SizedBox(height: 10),
+            Align(
+              alignment: Alignment.center,
+              child: Container(
+                width: 380,
+                height: 53,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Color(0xFFE87C5F),
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        'assets/images/icons.png',
+                        width: 35,
+                        height: 35,
+                        fit: BoxFit.cover,
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        'nasigoreng',
+                        style: TextStyle(
+                            color: const Color(0xFFE87C5F),
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        width: 160,
+                      ),
+                      Text(
+                        '12 Juli 2003',
+                        style: TextStyle(
+                          color: const Color(0xFFE87C5F),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 10),
+            Align(
+              alignment: Alignment.center,
+              child: Container(
+                width: 380,
+                height: 53,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Color(0xFFE87C5F),
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        'assets/images/icons.png',
+                        width: 35,
+                        height: 35,
+                        fit: BoxFit.cover,
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        'nasigoreng',
+                        style: TextStyle(
+                            color: const Color(0xFFE87C5F),
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        width: 160,
+                      ),
+                      Text(
+                        '12 Juli 2003',
+                        style: TextStyle(
+                          color: const Color(0xFFE87C5F),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 10),
+            Align(
+              alignment: Alignment.center,
+              child: Container(
+                width: 380,
+                height: 53,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Color(0xFFE87C5F),
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        'assets/images/icons.png',
+                        width: 35,
+                        height: 35,
+                        fit: BoxFit.cover,
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        'nasigoreng',
+                        style: TextStyle(
+                            color: const Color(0xFFE87C5F),
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        width: 160,
+                      ),
+                      Text(
+                        '12 Juli 2003',
+                        style: TextStyle(
+                          color: const Color(0xFFE87C5F),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

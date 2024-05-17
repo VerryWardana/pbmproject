@@ -1,12 +1,13 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/stage.dart';
 
 class tampilangame extends StatelessWidget {
   const tampilangame({Key? key}) : super(key: key);
 
   void playAudio() async {
     AudioCache audioCache = AudioCache();
-    const audioPath = "assets/music/music/videoplayback.mp3"; // Ganti dengan path audio Anda
+    const audioPath = "assets/music/music/videoplayback.mp3"; 
     audioCache.play(audioPath);
   }
 
@@ -27,10 +28,12 @@ class tampilangame extends StatelessWidget {
             ),
             SizedBox(height: 40),
             ElevatedButton(
-              onPressed: () {
-                print('button klik');
-                playAudio(); // Panggil metode playAudio saat tombol diklik
-              },
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => stagegame()),
+                    );
+                  },
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF00E6AB),
                 minimumSize: Size(209, 61),

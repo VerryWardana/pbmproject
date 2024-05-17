@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/homepage.dart';
+import 'package:flutter_application_1/tampilangame.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -13,8 +14,8 @@ class _LandingPage extends State<LandingPage> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     Homepage(),
-    // Laporan(),
-    // Quiz(),
+    // ta(),
+    tampilangame(),
   ];
 
   void _onItemTapped(int index) {

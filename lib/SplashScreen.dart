@@ -50,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> {
               children: [
                 AnimatedOpacity(
                   opacity: _opacity,
-                  duration: Duration(seconds: 1),
+                  duration: Duration(seconds: 800),
                   child: Image.asset(
                     'assets/images/judul.png',
                     fit: BoxFit.scaleDown,

@@ -36,8 +36,7 @@ class stagegame extends StatelessWidget {
                 backgroundColor: Color(0xFF00E6AB),
                 minimumSize: Size(380, 103),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      20), 
+                  borderRadius: BorderRadius.circular(20),
                 ),
               ),
               child: Text(
@@ -49,15 +48,16 @@ class stagegame extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFF00E6AB),
                 minimumSize: Size(380, 103),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      20), 
+                  borderRadius: BorderRadius.circular(20),
                 ),
               ),
               child: Text(
@@ -69,15 +69,16 @@ class stagegame extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFF00E6AB),
                 minimumSize: Size(380, 103),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      20), 
+                  borderRadius: BorderRadius.circular(20),
                 ),
               ),
               child: Text(
@@ -89,15 +90,16 @@ class stagegame extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFF00E6AB),
                 minimumSize: Size(380, 103),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      20), 
+                  borderRadius: BorderRadius.circular(20),
                 ),
               ),
               child: Text(
