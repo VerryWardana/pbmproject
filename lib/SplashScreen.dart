@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'login.dart';
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -14,13 +16,13 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 5), () {
+    Timer(const Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => login()),
+        MaterialPageRoute(builder: (_) => const login()),
       );
     });
 
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 3), () {
       setState(() {
         _opacity = 1.0;
       });
@@ -30,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF3D8C5),
+      backgroundColor: const Color(0xFFF3D8C5),
       body: Stack(
         alignment: Alignment.center,
         children: <Widget>[
@@ -50,7 +52,7 @@ class _SplashScreenState extends State<SplashScreen> {
               children: [
                 AnimatedOpacity(
                   opacity: _opacity,
-                  duration: Duration(seconds: 800),
+                  duration: const Duration(seconds: 800),
                   child: Image.asset(
                     'assets/images/judul.png',
                     fit: BoxFit.scaleDown,
@@ -61,8 +63,8 @@ class _SplashScreenState extends State<SplashScreen> {
                   padding: const EdgeInsets.only(top: 80),
                   child: AnimatedOpacity(
                     opacity: _opacity,
-                    duration: Duration(seconds: 1),
-                    child: Text(
+                    duration: const Duration(seconds: 1),
+                    child: const Text(
                       '“Berani Berdiri, Berani Melawan”',
                       style: TextStyle(
                         color: Color(0xFFFF5146),

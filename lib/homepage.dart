@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_application_1/formaduan.dart';
 import 'package:flutter_application_1/tampilangame.dart';
 
 class Homepage extends StatelessWidget {
@@ -16,9 +17,9 @@ class Homepage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 40),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+            const SizedBox(height: 40),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -36,16 +37,16 @@ class Homepage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Stack(
               children: [
                 Padding(
-                  padding: EdgeInsets.all(15.0),
+                  padding: const EdgeInsets.all(15.0),
                   child: Image.asset(
                     'assets/images/mask.png',
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   top: 30,
                   left: 35,
                   child: Text(
@@ -57,7 +58,7 @@ class Homepage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   top: 55,
                   left: 35,
                   child: Text(
@@ -77,23 +78,28 @@ class Homepage extends StatelessWidget {
                     child: Container(
                       width: 50.0,
                       height: 50.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
-                        color: const Color(0xFFE87C5F),
+                        color: Color(0xFFE87C5F),
                       ),
-                      child: Icon(
-                        Icons.add,
-                        color: Colors.white,
-                        size: 35,
+                      child: IconButton(
+                        icon: const Icon(Icons.add, color: Colors.white, size: 35,),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const FormAduan()),
+                          );
+                        },
                       ),
                     ),
                   ),
                 ),
               ],
             ),
-            SizedBox(height: 20),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+            const SizedBox(height: 20),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
               child: Text(
                 'Butuh Teman Curhat',
                 style: TextStyle(
@@ -102,10 +108,10 @@ class Homepage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20),
-            SingleChildScrollView(
+            const SizedBox(height: 20),
+            const SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-               padding: const EdgeInsets.symmetric(horizontal: 20),
+              padding: EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 children: [
                   Column(
@@ -222,8 +228,8 @@ class Homepage extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
               child: Text(
                 'Ingin Hiburan',
                 style: TextStyle(
@@ -232,11 +238,11 @@ class Homepage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Stack(
               children: [
                 Padding(
-                  padding: EdgeInsets.all(15.0),
+                  padding: const EdgeInsets.all(15.0),
                   child: Image.asset(
                     'assets/images/mask2.png',
                   ),
@@ -255,13 +261,14 @@ class Homepage extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => tampilangame()),
+                        MaterialPageRoute(
+                            builder: (context) => const tampilangame()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFFE87C5F),
                     ),
-                    child: Text(
+                    child: const Text(
                       'ayo main',
                       style: TextStyle(
                         color: Colors.white,
@@ -271,9 +278,9 @@ class Homepage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 10),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+            const SizedBox(height: 10),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
               child: Text(
                 'Riwayat Laporan',
                 style: TextStyle(
@@ -282,7 +289,7 @@ class Homepage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
               child: Container(
@@ -290,7 +297,7 @@ class Homepage extends StatelessWidget {
                 height: 53,
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: Color(0xFFE87C5F),
+                    color: const Color(0xFFE87C5F),
                   ),
                 ),
                 child: Padding(
@@ -304,22 +311,22 @@ class Homepage extends StatelessWidget {
                         height: 35,
                         fit: BoxFit.cover,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
-                      Text(
+                      const Text(
                         'nasigoreng',
                         style: TextStyle(
-                            color: const Color(0xFFE87C5F),
+                            color: Color(0xFFE87C5F),
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 160,
                       ),
-                      Text(
+                      const Text(
                         '12 Juli 2003',
                         style: TextStyle(
-                          color: const Color(0xFFE87C5F),
+                          color: Color(0xFFE87C5F),
                         ),
                       ),
                     ],
@@ -327,7 +334,7 @@ class Homepage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Align(
               alignment: Alignment.center,
               child: Container(
@@ -335,7 +342,7 @@ class Homepage extends StatelessWidget {
                 height: 53,
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: Color(0xFFE87C5F),
+                    color: const Color(0xFFE87C5F),
                   ),
                 ),
                 child: Padding(
@@ -349,22 +356,22 @@ class Homepage extends StatelessWidget {
                         height: 35,
                         fit: BoxFit.cover,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
-                      Text(
+                      const Text(
                         'nasigoreng',
                         style: TextStyle(
-                            color: const Color(0xFFE87C5F),
+                            color: Color(0xFFE87C5F),
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 160,
                       ),
-                      Text(
+                      const Text(
                         '12 Juli 2003',
                         style: TextStyle(
-                          color: const Color(0xFFE87C5F),
+                          color: Color(0xFFE87C5F),
                         ),
                       ),
                     ],
