@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/landingpage.dart';
+import 'package:flutter_application_1/navbar_bawah.dart';
 
 class ListPesan extends StatefulWidget {
   const ListPesan({super.key});
@@ -43,7 +43,7 @@ class _ListPesanState extends State<ListPesan> {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const LandingPage()),
+              MaterialPageRoute(builder: (context) => const NavbarBawah()),
             );
           },
         ),

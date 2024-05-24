@@ -103,7 +103,7 @@ class register extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => login()),
+                      MaterialPageRoute(builder: (context) => Login()),
                     );
                   },
                   style: ElevatedButton.styleFrom(

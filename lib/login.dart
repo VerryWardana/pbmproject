@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/landingpage.dart';
+import 'package:flutter_application_1/navbar_bawah.dart';
 import 'package:flutter_application_1/homepage.dart';
 import 'package:flutter_application_1/register.dart';
 
-class login extends StatelessWidget {
-  const login({Key? key}) : super(key: key);
+class Login extends StatelessWidget {
+  const Login({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -128,7 +128,7 @@ class login extends StatelessWidget {
                       context,
                       PageRouteBuilder(
                         pageBuilder: (context, animation1, animation2) =>
-                            LandingPage(),
+                            NavbarBawah(),
                         transitionsBuilder:
                             (context, animation1, animation2, child) {
                           return FadeTransition(

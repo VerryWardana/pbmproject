@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/LandingPage.dart';
+import 'package:flutter_application_1/navbar_bawah.dart';
 import 'package:flutter_application_1/homepage.dart';
 import 'package:intl/intl.dart';
 
@@ -60,7 +60,7 @@ class _FormAduanState extends State<FormAduan> {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const LandingPage()),
+              MaterialPageRoute(builder: (context) => const NavbarBawah()),
             );
           },
         ),

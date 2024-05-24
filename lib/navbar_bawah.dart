@@ -2,22 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/formaduan.dart';
 import 'package:flutter_application_1/homepage.dart';
 import 'package:flutter_application_1/listpesan.dart';
-import 'package:flutter_application_1/tampilangame.dart';
 
-class LandingPage extends StatefulWidget {
-  const LandingPage({Key? key}) : super(key: key);
+class NavbarBawah extends StatefulWidget {
+  const NavbarBawah({Key? key}) : super(key: key);
 
   @override
-  State<LandingPage> createState() => _LandingPage();
+  State<NavbarBawah> createState() => _NavbarBawah();
 }
 
-class _LandingPage extends State<LandingPage> {
+class _NavbarBawah extends State<NavbarBawah> {
   int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
     Homepage(),
     FormAduan(),
-    tampilangame(),
     ListPesan()
   ];
 
@@ -43,10 +41,6 @@ class _LandingPage extends State<LandingPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.description_rounded),
             label: 'Laporan',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.quiz_rounded),
-            label: 'Quiz',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.chat_rounded),

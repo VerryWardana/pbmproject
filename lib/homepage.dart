@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/formaduan.dart';
-import 'package:flutter_application_1/tampilangame.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -262,7 +261,7 @@ class Homepage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const tampilangame()),
+                            builder: (context) => const FormAduan())
                       );
                     },
                     style: ElevatedButton.styleFrom(
