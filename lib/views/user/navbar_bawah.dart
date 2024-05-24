@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/formaduan.dart';
-import 'package:flutter_application_1/homepage.dart';
-import 'package:flutter_application_1/listpesan.dart';
+import 'package:flutter_application_1/views/user/formaduan.dart';
+import 'package:flutter_application_1/views/user/homepage.dart';
+import 'package:flutter_application_1/views/user/listpesan.dart';
 
 class NavbarBawah extends StatefulWidget {
   const NavbarBawah({Key? key}) : super(key: key);

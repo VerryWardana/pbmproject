@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/HomePageAdmin.dart';
-import 'package:flutter_application_1/formaduan.dart';
-import 'package:flutter_application_1/game.dart';
-import 'package:flutter_application_1/homepage.dart';
-import 'package:flutter_application_1/navbar_bawah.dart';
-import 'package:flutter_application_1/quiz.dart';
-import 'package:flutter_application_1/stage.dart';
-import 'splashscreen.dart';
-import 'login.dart';
-import 'register.dart';
-import 'navbar_bawah.dart';
+import 'package:flutter_application_1/views/admin/HomePageAdmin.dart';
+import 'package:flutter_application_1/views/user/formaduan.dart';
+import 'package:flutter_application_1/views/user/homepage.dart';
+import 'package:flutter_application_1/views/user/navbar_bawah.dart';
+import 'views/user/splashscreen.dart';
+import 'views/user/login.dart';
+import 'views/user/register.dart';
+import 'views/user/navbar_bawah.dart';
 
 void main() {
   runApp(const MyApp());

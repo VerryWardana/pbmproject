@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/navbar_bawah.dart';
-import 'package:flutter_application_1/homepage.dart';
+import 'package:flutter_application_1/views/user/navbar_bawah.dart';
+import 'package:flutter_application_1/views/user/homepage.dart';
 import 'package:intl/intl.dart';
 
 class FormAduan extends StatefulWidget {
