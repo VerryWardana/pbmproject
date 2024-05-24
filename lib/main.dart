@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/views/admin/HomePageAdmin.dart';
+import 'package:flutter_application_1/views/mentor/homepage.dart';
 import 'package:flutter_application_1/views/user/formaduan.dart';
 import 'package:flutter_application_1/views/user/homepage.dart';
 import 'package:flutter_application_1/views/user/navbar_bawah.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Login(),
+      home: HomepageMentor(),
     );
   }
 }
